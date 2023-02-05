@@ -1,8 +1,30 @@
 [package]
 name = "mim-torrent"
+description = "BitTorrent client"
+readme = "README.md"
+repository = "https://github.com/the-pinbo/mim"
 version = "0.1.0"
-edition = "2021"
+edition = "2018"
+keywords = ["mim-torrent"]
+authors = ["inba2002.p@gmail.com"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bincode = "1.3.3"
+serde = { version = "1.0.126", features = ["derive"] }
+rand = "0.8.3"
+sha-1 = "0.10.1"
+async-channel = "1.6.1"
+tokio = { version = "1.6.1", features = ["rt", "rt-multi-thread", "net", "fs", "io-util", "sync", "time", "macros"] }
+num_cpus = "1.13.0"
+
+[[bin]]
+name = "bittorrent"
+path = "src/main.rs"
+
+[profile.release]
+debug = true
+
+[build]
+rustflags = ["target_cpu=native"]
