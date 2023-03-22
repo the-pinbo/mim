@@ -55,26 +55,29 @@ https://github.com/jackpal/Taipei-Torrent
 
 ## Things that need to be done before the next meeting
 
-- [ ] Reading .torrent files (single-file torrents only)
-- [ ] Connecting to a tracker to discover peers
-- [ ] Downloading a file from multiple peers in parallel
-- [ ] Queueing multiple requests with each peer for faster downloading (aka pipelining)
-- [ ] Uploading files to peers, and seeding existing files from disk
-- [ ] Resuming partial downloads
-- [ ] Verification of correctness of downloaded chunks
-- [ ] Multi-file torrents
-- [ ] Connecting to multiple trackers
-- [ ] A command-line utility for BitTorrent torrent file creation, verification, and inspection
+- [x] Reading .torrent files (single-file torrents only)
+- [x] Connecting to a tracker to discover peers
+- [x] Downloading a file from multiple peers in parallel
+- [x] Queueing multiple requests with each peer for faster downloading (aka pipelining)
+- [x] Uploading files to peers, and seeding existing files from disk
+- [x] Resuming partial downloads
+- [x] Verification of correctness of downloaded chunks
+- [x] Multi-file torrents
+- [x] Connecting to multiple trackers
+- [x] Asynchronous IO on a multithreaded runtime
+- [x] Add tests
+- [x] Setup a listener for seeding to peers.
+- [x] DHT
 
-## Things that need to be done before the final presentation
+## TODO
 
-- [ ] Add tests
-- [ ] Setup a listener for seeding to peers.
-- [ ] Improve error handling and add retries for the tracker.
-- [ ] Update tracker regularly and update list of peers.
-- [ ] DHT, PEX, NAT traversal for more peers
-- [ ] Asynchronous IO on a multithreaded runtime
+- [ ] Improve error handling and add retries for the tracker
+- [ ] Per-file stats
+- [ ] Per-peer stats
+- [ ] PEX, NAT traversal for more peers
 - [ ] Upload throttling/congestion control
-- [ ] GUI for the terminal.
-- [ ] uTorrent transport protocol
+- [ ] GUI for the terminal
 - [ ] Piece paging/caching
+- [ ] Signaling when completed download
+- Optimizations
+  - [ ] when we have the whole torrent, there's no point talking to peers that also have the whole torrent
