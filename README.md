@@ -4,6 +4,10 @@
 
 MIM is a command line GUI torrent application that lets you download torrent files from the internet. As opposed to the general notion that torrents are used for piracy, a lot of stuff on the internet is downloadable through torrents (peer 2 peer networks). For instance, many popular Linux distros are easily downloadable through torrent clients at very fast speeds due to the peer-2-peer network capabilities. We aim to implement such a client, that can download files from the internet through .torrent files and magnet links. It involves deep knowledge of networking and an understanding of peer-2-peer communication using the BitTorrent protocol.
 
+## How to install
+
+`cargo install --path crates/mim`
+
 ## How to run
 
 `mim` is a command line application. You can run it by typing `mim` in your terminal. It has two subcommands: `server` and `download`. The `server` subcommand starts a server that can be used to download files. The `download` subcommand can be used to download files from the server. You can also use the `--help` flag to get more information about the subcommands.
