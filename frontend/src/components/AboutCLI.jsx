@@ -1,10 +1,10 @@
 import React from 'react'
 import CLI from '../assets/terminal.png'
-import { Link } from 'react-router-dom'
+import { Link} from "react-router-dom";
 
 function AboutCLI() {
   return (
-    <div className="w-full bg-white py-16 px-4 ">
+    <div className="w-full bg-white py-16 px-4 " id="cli">
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
             <img className="w-[300px] mx-auto my-4" src={CLI} alt="/"/>
             <div className="flex flex-col justify-center">

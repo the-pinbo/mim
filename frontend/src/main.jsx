@@ -9,7 +9,12 @@ import CN from "./components/CN"
 import OS from "./components/OS"
 import DHT from "./components/DHT"
 import Rust from './components/Rust'
+import cliDoc from './components/CLI-doc'
 import './index.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 
 const router = createBrowserRouter([
@@ -41,6 +46,6 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
