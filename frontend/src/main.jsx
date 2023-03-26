@@ -11,10 +11,6 @@ import DHT from "./components/DHT"
 import Rust from './components/Rust'
 import cliDoc from './components/CLI-doc'
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 
 
 const router = createBrowserRouter([
