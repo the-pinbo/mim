@@ -2,7 +2,6 @@ import styles from "../constants/style"
 import { CN_text } from "../constants/cn"
 import { useState, useEffect } from "react"
 import { Application, Data_link, Model, Network, Transport, Physical } from "./CN_topics";
-import { motion } from 'framer-motion'
 function CN() {
     const [topic, setTopic] = useState(0);
     return (
@@ -22,7 +21,7 @@ function CN() {
                     </div>
                 </div>
                 <div className="w-full h-[5px] rounded-3xl bg-black my-3"></div>
-                <div className="my-10">
+                <div className="my-10 w-full">
                     {topic == 0 && <Model />}
                     {topic == 1 && <Physical />}
                     {topic == 2 && <Data_link />}
