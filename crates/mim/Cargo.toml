@@ -1,8 +1,8 @@
 [package]
 name = "mim"
 description = "A bittorent client"
-version = "2.0.0"
-authors = ["Igor Katson <igor.katson@gmail.com>"]
+version = "1.0.0"
+authors = ["Inbasekaran <inba2002.p@gmail.com>"]
 edition = "2018"
 
 [features]
