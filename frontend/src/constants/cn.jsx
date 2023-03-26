@@ -1,0 +1,4 @@
+export const CN_text = {
+    para1: "Computer Networking is an important field of computer science that deals with connecting various devices together and ensuring that these devices are able to communicate with each other. In the recent years this field of Computer Science has seen rapid development and increased number of users which has led to development of various services and technologies in this domain.",
+    para2: "BitTorrent uses a peer-to-peer networking model, in which users connect to each other directly, rather than through a central server. BitTorrent protocol heavily relies on Computer Networking Algorithms and Protocols in order to establish robust connections among the peers."
+}
