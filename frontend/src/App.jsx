@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import DownloadTorrent from "./components/DownloadTorrent";
 
+
 function App() {
   return (
       <div className="App">
