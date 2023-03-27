@@ -6,6 +6,7 @@ import { OS_text } from "../../constants/os"
 import singleprocessor from "../../assets/SingleProcessor.png"
 import batchprocessor from "../../assets/batchProcessor.png"
 import multiprogram from "../../assets/multiProgram.webp"
+import multitasking from "../../assets/multitasking.png"
 import OS from "../OS"
 function TypesOfOS() {
     const [subtopic, setSubtopic] = useState(0)
@@ -115,11 +116,27 @@ function TypesOfOS() {
                     </motion.div>}
 
                     {subtopic == 4 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-                        {CN_text.tcp_5_layer_modal.data_link_layer}
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_tasking.para1}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_tasking.para2}
+                        </p>
+                        <img src={multitasking} alt="multi processor" className="mx-auto" />
+                        <p className="text-right text-xs pb-5">
+                            {OS_text.types_of_os.multi_tasking.caption}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_tasking.para3}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_tasking.para4}
+                        </p>
+
                     </motion.div>}
 
                     {subtopic == 5 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-                        {CN_text.tcp_5_layer_modal.physical_layer}
+                        
                     </motion.div>}
                 </div>
             </div>

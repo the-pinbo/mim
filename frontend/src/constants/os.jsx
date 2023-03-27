@@ -39,6 +39,15 @@ export const OS_text = {
             para4: "However, the downside of a multiprogramming operating system is that it can be complex and difficult to manage. The operating system must manage multiple processes and allocate system resources such as CPU time, memory, and input/output devices. This can lead to issues such as deadlock and resource contention, where processes compete for the same resources and cause delays in processing.",
             para5: "In summary, a multiprogramming operating system is an operating system that allows multiple programs or processes to run concurrently on a computer system. While it improves system efficiency and interactivity, it can also be complex and difficult to manage.",
             caption : "Multiprogramming OS, from scaler.com",
-        }
+        },
+
+        multi_tasking : {
+            para1 : "A multitasking operating system is a type of operating system that allows multiple applications or processes to run concurrently on a computer system. In other words, it can handle more than one task or process at the same time, allowing users to switch between different applications seamlessly.",
+            para2: "Multitasking operating systems manage the resources of the computer system, such as the central processing unit (CPU), memory, and input/output devices, to ensure that each application or process receives the necessary resources to function properly. They use scheduling algorithms to allocate CPU time to different tasks, allowing them to run simultaneously without interfering with one another.",
+            para3: "Multitasking operating systems provide several benefits, including improved productivity, faster application response times, and better resource utilization. For example, a user can work on a word processing document while simultaneously downloading files from the internet and listening to music, all without any noticeable performance degradation.",
+            para4: "Multitasking operating systems come in different types, ranging from single-user systems to multi-user systems used in enterprise environments. Some examples of multitasking operating systems include Windows, macOS, and Linux.",
+            para5: "Overall, multitasking operating systems are a fundamental component of modern computing, allowing users to work more efficiently and effectively by running multiple applications or processes simultaneously.",
+            caption: "Multitasking OS, from byjus.com",
+        },
     }
 }
