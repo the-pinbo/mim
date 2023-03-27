@@ -7,6 +7,9 @@ import singleprocessor from "../../assets/SingleProcessor.png"
 import batchprocessor from "../../assets/batchProcessor.png"
 import multiprogram from "../../assets/multiProgram.webp"
 import multitasking from "../../assets/multitasking.png"
+import multiprocessor from "../../assets/multiprocess.png"
+import realtime from "../../assets/realtime.webp"
+import distributed from "../../assets/distributed.webp"
 import OS from "../OS"
 function TypesOfOS() {
     const [subtopic, setSubtopic] = useState(0)
@@ -136,7 +139,69 @@ function TypesOfOS() {
                     </motion.div>}
 
                     {subtopic == 5 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-                        
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_process.para1}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_process.para2}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_process.para3}
+                        </p>
+                        <img src={multiprocessor} alt="multi processor" className="mx-auto" />
+                        <p className="text-right text-xs pb-5">
+                            {OS_text.types_of_os.multi_process.caption}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_process.para4}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.multi_process.para5}
+                        </p>
+                    </motion.div>}
+                    
+                    {subtopic == 6 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.real_time.para1}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.real_time.para2}
+                        </p>
+                        <img src={realtime} alt="multi processor" className="mx-auto" />
+                        <p className="text-right text-xs pb-5">
+                            {OS_text.types_of_os.real_time.caption}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.real_time.para3}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.real_time.para4}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.real_time.para5}
+                        </p>
+                    </motion.div>}
+
+                    {subtopic == 7 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.distributed.para1}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.distributed.para2}
+                        </p>
+                        <img src={distributed} alt="multi processor" className="mx-auto" />
+                        <p className="text-right text-xs pb-5">
+                            {OS_text.types_of_os.distributed.caption}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.distributed.para3}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.distributed.para4}
+                        </p>
+                        <p className="pb-5">
+                            {OS_text.types_of_os.distributed.para5}
+                        </p>
                     </motion.div>}
                 </div>
             </div>

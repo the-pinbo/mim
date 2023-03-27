@@ -49,5 +49,34 @@ export const OS_text = {
             para5: "Overall, multitasking operating systems are a fundamental component of modern computing, allowing users to work more efficiently and effectively by running multiple applications or processes simultaneously.",
             caption: "Multitasking OS, from byjus.com",
         },
+
+        multi_process : {
+            para1: "A multiprocessing operating system is a type of operating system that is designed to take advantage of multiple central processing units (CPUs) or processor cores within a computer system. It is different from a multitasking operating system, which can handle multiple tasks or processes, but still runs on a single CPU.",
+            para2: "Multiprocessing operating systems use specialized algorithms to divide tasks and processes among multiple CPUs or cores, allowing for parallel processing and improved performance. This means that multiple processes can be executed simultaneously, improving system throughput and reducing the time needed to complete complex tasks.",
+            para3: "These operating systems are commonly used in high-performance computing environments, such as scientific simulations, data analysis, and computer-aided design. They can also be used in servers and other enterprise environments to handle multiple concurrent user requests.",
+            para4: "Examples of multiprocessing operating systems include Windows Server, Linux, and Unix. These operating systems can be configured to take advantage of multiple CPUs or cores, providing improved performance and scalability for demanding applications.",
+            para5: "Overall, multiprocessing operating systems are a type of operating system that is designed to take advantage of multiple CPUs or cores within a computer system. They can be used in high-performance computing environments to improve system throughput and reduce the time needed to complete complex tasks.",
+            caption: "Multiprocessing OS, from javatpoint.com",
+        },
+
+        real_time : {
+            para1 : "A real-time operating system (RTOS) is a type of operating system that is designed to handle applications and processes with strict timing requirements. It is used in systems where the response time to an event is critical and needs to be guaranteed, such as in industrial control systems, medical devices, and aerospace systems.",
+            para2 : "RTOS are characterized by their ability to respond to events and inputs within a specific time frame, known as a deadline. They achieve this by prioritizing tasks, providing fast and predictable response times, and minimizing system overhead. They also provide features such as task scheduling, interrupt handling, and memory management that are optimized for real-time performance.",
+            para3 : "There are three types of RTOS: hard real-time, soft real-time, and firm real-time. A hard real-time operating system guarantees that tasks will be completed before their deadlines, even if other tasks are running at the same time. A soft real-time operating system can allow some tasks to miss their deadlines, as long as the overall system performance remains within acceptable limits. A firm real-time operating system is a hybrid between hard and soft real-time systems, providing a balance between strict timing requirements and a degree of flexibility.",
+            para4 : "Examples of real-time operating systems include QNX, VxWorks, and FreeRTOS. These operating systems are used in a wide range of applications, including automotive systems, telecommunications, and military systems.",
+            para5 : "Overall, real-time operating systems are essential for applications where timing and response are critical, providing reliable and predictable performance in a variety of demanding environments.",
+            caption : "Real Time OS, from guru99.com",
+        },
+
+        distributed : {
+            para1 : "A distributed operating system is a type of operating system that runs on multiple interconnected computers or nodes, working together as a single system. Unlike a traditional operating system that runs on a single machine, a distributed operating system manages resources across a network of computers, allowing them to work together as a unified system.",
+            para2 : "Distributed operating systems provide a range of benefits, including improved performance, scalability, and fault tolerance. By distributing tasks across multiple nodes, they can handle large workloads more efficiently than a single machine. Additionally, if one node fails or experiences an issue, the other nodes can continue to function, ensuring that the system remains available.",
+            para3 : "Distributed operating systems typically include features such as process management, file systems, and networking protocols, which are optimized for distributed environments. They also provide mechanisms for communication and coordination between nodes, such as message passing and remote procedure calls.",
+            para4 : "Examples of distributed operating systems include Linux Cluster, Apache Hadoop, and Google's Spanner. These operating systems are used in a variety of applications, including high-performance computing, data storage and processing, and cloud computing.",
+            para5 : "Overall, distributed operating systems provide a powerful and flexible platform for managing resources across a network of computers, enabling applications to run more efficiently, scale as needed, and remain available in the event of failures or issues.",
+            caption : "Distributed OS, from scaler.com",
+        },
+
+
     }
 }
