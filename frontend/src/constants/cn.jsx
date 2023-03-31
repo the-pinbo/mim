@@ -36,10 +36,22 @@ export const CN_text = {
         },
     },
     // 
+    physical_layer: {
+        description: "The physical layer sits at the lowset of the 5-layer network stack. The job of the physical layer is to move the individual bits of information from one node to the next. The protocols in this layer are link-dependent and also depend on the actual transmission medium of the link. For Example, Ethernet has many physical layer protocols: one for twisted-pair copper wiree, another for coaxial cable, another for fiber, and so on."
+    },
     data_link_layer: {
-        description: {
+        description: ["To move a data packet from one node to te next node in the route, the Data Link Layer is employed. The data from the higher layers is passed down to the Link Layer, which delivers the datagram to the next node along the route. Examples of link-layer protocols inculde Ethernet, WiFi, and the cable access network's DOCSIS protocol. Link Layer packets are called Frames.","The Link Layer uses MAC Address to identify cource and destination."],
+        mac:{
+            description: ["MAC stands for Media Access Control. MAC Address is used to identify data transmission destination on a Collision Domain. It is a 48-bit long globally unique identifier attached to an individual network interface.","Usually MAC Addresses are written in 6 groupings of 2 Hexadecimal Numbers. The first three octets of the MAC are specific to the manufacturer and the last three can be assigned in any way ensuring that the resulting MAC Address is unique."],
+            sample: ["00:0a:83",":b1:c0:8e"],
+            transmission:{
+                unicast: "",
+                multicast:"",
+                broadcast:"",
+            }
+        },
+        ethernet:{
 
         }
-    }
-
+    },
 }

@@ -10,7 +10,8 @@ function Model() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-        >
+        >   
+            <div className={`text-center basis-full mb-5 ${styles.title}`}>5-Layer Model</div>
             <div className="text-black flex">
                 <div className="basis-4/12 flex justify-center">
                     <ul>
