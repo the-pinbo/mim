@@ -6,6 +6,7 @@ import up_down from "../assets/arrows-up-down-solid.svg"
 import person from "../assets/person-solid.svg"
 import {TypesOfOS} from "./OS_topics";
 
+
 const OS = () => {
     const [topic, setTopic] = useState(0);
     return (
