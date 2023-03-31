@@ -1,6 +1,8 @@
 const styles = {
     // Classes
     title: "text-[#00df9a] font-bold p-3 text-3xl",
+    subheading: "text-[#00df9a] font-bold text-2xl",
+    subheading_: "text-blue-500 font-bold text-2xl",
     button_start: "p-3 border-white border-r-2 rounded-l-3xl transition-all	hover:scale-105 ease-in-out",
     button_end: "p-3 rounded-r-3xl transition-all hover:scale-105 ease-in-out",
     button: "p-3 border-white border-r-2 transition-all	hover:scale-105 ease-in-out",
