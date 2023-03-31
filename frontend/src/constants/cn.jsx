@@ -44,14 +44,109 @@ export const CN_text = {
         mac:{
             description: ["MAC stands for Media Access Control. MAC Address is used to identify data transmission destination on a Collision Domain. It is a 48-bit long globally unique identifier attached to an individual network interface.","Usually MAC Addresses are written in 6 groupings of 2 Hexadecimal Numbers. The first three octets of the MAC are specific to the manufacturer and the last three can be assigned in any way ensuring that the resulting MAC Address is unique."],
             sample: ["00:0a:83",":b1:c0:8e"],
-            transmission:{
-                unicast: "",
-                multicast:"",
-                broadcast:"",
-            }
         },
         ethernet:{
+            preamble: "Ethernet frame starts with a 7-Bytes Preamble. This is a pattern of alternative 0's and 1's which indicates starting of the frame and allow sender and receiver to establish bit synchronization. Preamble indicates the receiver that frame is coming and allow the receiver to lock onto the data stream before the actual frame begins.",
+            sfd: "Start of frame delimiter (SFD) is a 1-Byte field that is always set to 10101011. SFD indicates that upcoming bits are starting the frame, which is the destination address.",
+            dest: "This is a 6-Byte field that contains the MAC address of the machine for which data is destined.",
+            src: "This is a 6-Byte field that contains the MAC address of the source machine.",
+            vlan: "The Ethernet frame can also include a VLAN (Virtual Local Area Network) tag, which is a 4-byte field inserted after the source address and before the EtherType field. This tag allows network administrators to logically separate a physical network into multiple virtual networks, each with its own VLAN ID.",
+            ether: "EtherType is a two-octet field in an Ethernet frame. It is used to indicate which protocol is encapsulated in the payload of the frame and is used at the receiving end by the data link layer to determine how the payload is processed.",
+            payload: "This is the place where actual data is inserted. Both IP header and data will be inserted here if Internet Protocol is used over Ethernet. The maximum data present may be as long as 1500 Bytes",
+            fsc: "Framee Check Sequence is a 4 Byte field. This field contains a 32-bits hash code of data, which is generated over the Destination Address, Source Address, Length, and Data field. If the checksum computed by destination is not the same as sent checksum value, data received is corrupted."
+        }
+    },
+    network_layer: {
+        description: "",
+        ip: {
+
+        },
+        datagram:{
+            version:"",
+            header_len:"",
+            service_type:"",
+            total_len:"",
+            identification:"",
+            null:"",
+            dont_frag:"",
+            more_frag:"",
+            fragment_offset:"",
+            ttl:"",
+            protocol:"",
+            header_checksum:"",
+            src_ip:"",
+            dest_ip:"",
+            options:"",
+            padding:""
+        },
+        subnetting:{
 
         }
     },
+    transport_layer: {
+        description: "",
+        multi_demulti: {
+            multi: {},
+            demulti: {},
+            ports: {}
+        },
+        segment: {
+            source_port:"",
+            dest_port:"",
+            sequence_num:"",
+            ack_num:"",
+            header_len:"",
+            empty:"",
+            control_flags:"",
+            tcp_window:"",
+            ckecksum:"",
+            urgent:"",
+            options:"",
+            padding:"",
+            payload:""
+        },
+        flags:{
+            urg:{
+                code:"",
+                text:"",
+                data:""
+            },
+            ack:{
+                code:"",
+                text:"",
+                data:""
+            },
+            psh:{
+                code:"",
+                text:"",
+                data:""
+            },
+            rst:{
+                code:"",
+                text:"",
+                data:""
+            },
+            syn:{
+                code:"",
+                text:"",
+                data:""
+            },
+            fin:{
+                code:"",
+                text:"",
+                data:""
+            },
+        },
+        three_way_handshake: "",
+        four_way_handshake: ""
+    },
+    application_layer: {
+        description: "",
+        dns:{
+
+        },
+        dhcp:{
+
+        }
+    }
 }

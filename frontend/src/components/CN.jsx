@@ -11,7 +11,7 @@ function CN() {
                 <div className="basis-full">{CN_text.para1}</div>
                 <div className="basis-full pb-5">{CN_text.para2}</div>
                 <div className="basis-full flex justify-center">
-                    <div className={`w-max flex justify-center bg-[#00df9a] ${styles.btn_grp}`} id="button-grp">
+                    <div className={`flex justify-center bg-[#00df9a] ${styles.btn_grp}`} id="button-grp">
                         <button onClick={() => setTopic(0)} className={`${topic == 0 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button_start}`}>TCP/IP 5 Layer Model</button>
                         <button onClick={() => setTopic(1)} className={`${topic == 1 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button}`}>Physical Layer</button>
                         <button onClick={() => setTopic(2)} className={`${topic == 2 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button}`}>Data Link Layer</button>

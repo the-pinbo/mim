@@ -12,6 +12,9 @@ const styles = {
     button_tcp: "p-3 m-1 border-t-2 text-center w-48 transition-all hover:scale-105 ease-in-out",
 
     //back_button
-    back: "bg-[#00df9a] text-black rounded-md font-medium my-3 px-5 py-2"
+    back: "bg-[#00df9a] text-black rounded-md font-medium my-3 px-5 py-2",
+
+    //ethernet-frame
+    ethernet_btn: "p-2 mr-1 border-2 transition-all hover:-translate-y-1 ease-in-out"
 }
 export default styles
