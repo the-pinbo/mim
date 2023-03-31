@@ -51,7 +51,7 @@ function Cards() {
             <div className='text-center font-medium'>
             <p className='py-2 border-b mx-8 mt-8'>Stanford</p> 
             <p className='py-2 border-b mx-8'>Arpit Bhayani</p> 
-            <p className='py-2 border-b mx-8'></p> 
+            <p className='py-2 border-b mx-8'>Kelsey Chan</p> 
             </div>
             <Link to="/dht" className='my-6 mx-auto py-4 bg-[#00df9a] w-[200px] rounded-md font-medium text-center text-black'>
             Read Blog
