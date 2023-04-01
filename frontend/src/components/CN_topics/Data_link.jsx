@@ -19,8 +19,8 @@ function Data_link() {
             <div className="my-5">
                 <div className={styles.subheading}>MAC Address:</div>
                 <ul className="list-disc">
-                    <li>{CN_text.data_link_layer.mac.description[0]}</li>
-                    <li>{CN_text.data_link_layer.mac.description[1]}</li>
+                    <li className="mb-1">{CN_text.data_link_layer.mac.description[0]}</li>
+                    <li className="mb-1">{CN_text.data_link_layer.mac.description[1]}</li>
                 </ul>
                 <div className="flex justify-center">
                     <span className={`text-center ${styles.subheading_}`}>{CN_text.data_link_layer.mac.sample[0]}</span>
@@ -43,7 +43,7 @@ function Data_link() {
                 </div>
             </div>
             <div className="w-full h-[5px] rounded-3xl bg-black my-3"></div>
-            <div className="my-5 w-full">
+            <div className="my-5 w-full h-[50px]">
                 {subtopic == 0 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>< Ethernt data={CN_text.data_link_layer.ethernet.preamble} /></motion.div>}
                 {subtopic == 1 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>< Ethernt data={CN_text.data_link_layer.ethernet.sfd} /></motion.div>}
                 {subtopic == 2 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>< Ethernt data={CN_text.data_link_layer.ethernet.dest} /></motion.div>}
