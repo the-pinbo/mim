@@ -132,12 +132,14 @@ export const CN_text = {
         },
     },
     application_layer: {
-        description: "",
-        dns:{
-
+        description: ["The application layer is the highest layer in the TCP/IP model and is responsible for providing services and protocols that enable users to access and utilize network resources. It is the layer that interacts with the user and the user's applications.","The application layer provides a range of services, including file transfer, email, remote login, and access to web pages.","One of the key features of the application layer is that it is independent of the underlying network. This means that applications can be developed without worrying about the details of the network infrastructure. The application layer abstracts away the complexity of the lower layers, providing a consistent interface for application development."],
+        protocols:{
+            http: "Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.",
+            smtp:"It stands for Simple Mail Transfer Protocol. It is a part of the TCP/IP protocol. Using a process called “store and forward,” SMTP moves your email on and across networks. It works closely with something called the Mail Transfer Agent (MTA) to send your communication to the right computer and email inbox. The Port number for SMTP is 25.",
+            ftp:"FTP stands for file transfer protocol. It is the protocol that actually lets us transfer files. It can facilitate this between any two machines using it. But FTP is not just a protocol but it is also a program.FTP promotes sharing of files via remote computers with reliable and efficient data transfer. The Port number for FTP is 20 for data and 21 for control.",
+            telnet:"Telnet stands for the TELetype NETwork. It helps in terminal emulation. It allows Telnet clients to access the resources of the Telnet server. It is used for managing files on the internet. It is used for the initial setup of devices like switches. The telnet command is a command that uses the Telnet protocol to communicate with a remote device or system. Port number of telnet is 23.",
+            dns:"It stands for Domain Name System. Every time you use a domain name, therefore, a DNS service must translate the name into the corresponding IP address. For example, the domain name www.abc.com might translate to 198.105.232.4. The Port number for DNS is 53.",
+            dhcp:"It stands for Dynamic Host Configuration Protocol (DHCP). It gives IP addresses to hosts. There is a lot of information a DHCP server can provide to a host when the host is registering for an IP address with the DHCP server. Port number for DHCP is 67, 68. "
         },
-        dhcp:{
-
-        }
     }
 }
