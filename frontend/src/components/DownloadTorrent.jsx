@@ -5,7 +5,6 @@ function DownloadTorrent() {
     myHeaders.append("Content-Type", "text/plain");
 
     var jsonData = String(document.getElementById('input-field').value);
-    console.log(typeof jsonData);
 
     fetch('http://localhost:3030/torrents', {
       method: 'POST',
