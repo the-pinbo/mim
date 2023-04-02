@@ -11,7 +11,7 @@ import multiprocessor from "../../assets/multiprocess.png"
 import realtime from "../../assets/realtime.webp"
 import distributed from "../../assets/distributed.webp"
 import OS from "../OS"
-function TypesOfOS() {
+function TypesOfOS() {  
     const [subtopic, setSubtopic] = useState(0)
     return (
         <motion.div
@@ -32,7 +32,8 @@ function TypesOfOS() {
                     </ul>
                 </div>
                 <div className="basis-7/12">
-                    {subtopic == 0 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}><div className="my-2">
+                    {subtopic == 0 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+                        <div className="my-2">
                             {OS_text.types_of_os.main.para1}
                         </div>
                         <div className="my-2">
@@ -51,6 +52,7 @@ function TypesOfOS() {
                             <button onClick={() => setSubtopic(0)} className={styles.back}>Back</button>
                         </motion.div>
                     )}
+                    
                     {subtopic == 1 && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
                         <p className="pb-5">
                             {OS_text.types_of_os.single_process.para1}

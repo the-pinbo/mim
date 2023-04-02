@@ -4,7 +4,7 @@ import { OS_text } from "../constants/os"
 import down from "../assets/arrow-down-solid.svg"
 import up_down from "../assets/arrows-up-down-solid.svg"
 import person from "../assets/person-solid.svg"
-import { TypesOfOS } from "./OS_topics";
+import { TypesOfOS, Ptm } from "./OS_topics";
 import { Link } from "react-router-dom";
 const OS = () => {
     const [topic, setTopic] = useState(0);
@@ -54,14 +54,15 @@ const OS = () => {
                 <div className="basis-full flex justify-center">
                     <div className={`w-max flex justify-center bg-[#00df9a] ${styles.btn_grp}`}>
                         <button onClick={() => setTopic(0)} className={`${topic == 0 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button_start}`}>Types of Operating Systems</button>
-                        <button onClick={() => setTopic(1)} className={`${topic == 1 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button}`}>What is an Operating System?</button>
+                        <button onClick={() => setTopic(1)} className={`${topic == 1 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button}`}>Process and Thread Management</button>
                         <button onClick={() => setTopic(2)} className={`${topic == 2 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button}`}>What is an Operating System?</button>
                         <button onClick={() => setTopic(3)} className={`${topic == 3 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button_end}`}>What is an Operating System?</button>
                     </div>
                 </div>
                 <div className="w-full h-[5px] rounded-3xl bg-black my-3"></div>
                 <div className="my-10">
-                    {topic == 0 && <TypesOfOS />}
+                    {topic == 0 && <TypesOfOS/>}
+                    {topic == 1 && <Ptm/>}
                 </div>
             </div>
         </div>
