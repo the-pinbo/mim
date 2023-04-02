@@ -4,12 +4,15 @@ import { OS_text } from "../constants/os"
 import down from "../assets/arrow-down-solid.svg"
 import up_down from "../assets/arrows-up-down-solid.svg"
 import person from "../assets/person-solid.svg"
-import {Ptm, TypesOfOS} from "./OS_topics";
-
+import { TypesOfOS, Ptm } from "./OS_topics";
+import { Link } from "react-router-dom";
 const OS = () => {
     const [topic, setTopic] = useState(0);
     return (
         <div className="py-6 bg-white flex justify-center">
+            <div>
+                <Link to="/" className={styles.back}>Back</Link>
+            </div>
             <div className="flex bg-white flex-wrap w-[60%]">
                 <div className={`text-center basis-full ${styles.title}`}>Operating Systems</div>
                 <div className="basis-full">{OS_text.para1}</div>
@@ -19,16 +22,16 @@ const OS = () => {
                             <th className="px-4 py-2">
                                 <div className="flex justify-center">
                                     <div className="w-3/4 flex justify-center">
-                                        <img src={person} alt="" className="w-10"/>
+                                        <img src={person} alt="" className="w-10" />
                                         User
                                     </div>
                                 </div>
                             </th>
                         </tr>
                     </thead>
-                        <tr>
-                            <td className="basis-full text-center"><img className={`w-3 mx-auto ${styles.arrow_down}`} src={up_down} alt="down arrow" /></td>
-                        </tr>
+                    <tr>
+                        <td className="basis-full text-center"><img className={`w-3 mx-auto ${styles.arrow_down}`} src={up_down} alt="down arrow" /></td>
+                    </tr>
                     <tbody>
                         <tr>
                             <td className={`${styles.table_data}`}>Application programs</td>
