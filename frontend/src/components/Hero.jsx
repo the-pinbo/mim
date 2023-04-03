@@ -4,9 +4,8 @@ function Hero() {
   return (
     <div className='text-white' id="home">
         <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
-            <p className='text-[#00df9a] font-bold p-2 text-2xl'>A TORRENT CLIENT</p>
             {/* MiM logo */}
-            <img src={mim_logo} alt='mim-logo' className='w-[200px] mx-auto' />
+            <img src={mim_logo} alt='mim-logo' className='w-[20rem] mx-auto' />
             <div className='flex justify-center items-center'>
                 <p className='md:text-5xl sm:text-4xl text-xl font-bold'>Peer-to-Peer Communication</p>
                 

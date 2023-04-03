@@ -11,7 +11,7 @@ function Navbar() {
     }
 
   return (
-    <div className='flex  flex-1 justify-between items-center h-24 max-w-[80%] mx-auto px-4 text-white '>
+    <div className='flex  flex-1 justify-between items-center h-24 max-w-[90%] mx-auto px-4 text-white '>
       {/* MiM logo */}
       <img src={mim_logo} alt="logo" className='w-20 h-20' />
       <ul className='hidden md:flex'>
