@@ -54,9 +54,9 @@ const OS = () => {
                 <div className="basis-full flex justify-center">
                     <div className={`w-max flex justify-center bg-[#00df9a] ${styles.btn_grp}`}>
                         <button onClick={() => setTopic(0)} className={`${topic == 0 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button_start}`}>Types of Operating Systems</button>
-                        <button onClick={() => setTopic(1)} className={`${topic == 1 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button}`}>Process and Thread Management</button>
-                        <button onClick={() => setTopic(2)} className={`${topic == 2 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button}`}>What is an Operating System?</button>
-                        <button onClick={() => setTopic(3)} className={`${topic == 3 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button_end}`}>What is an Operating System?</button>
+                        <button onClick={() => setTopic(1)} className={`${topic == 1 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button_end}`}>Process and Thread Management</button>
+                        {/* <button onClick={() => setTopic(2)} className={`${topic == 2 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button}`}>What is an Operating System?</button>
+                        <button onClick={() => setTopic(3)} className={`${topic == 3 ? "bg-black text-[#00df9a]" : "bg-transparent"} ${styles.button_end}`}>What is an Operating System?</button> */}
                     </div>
                 </div>
                 <div className="w-full h-[5px] rounded-3xl bg-black my-3"></div>
