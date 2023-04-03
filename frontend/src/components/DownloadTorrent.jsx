@@ -23,7 +23,7 @@ function DownloadTorrent() {
         if (response.ok) {
           setMessage('Downloaded');
         } else {
-          setMessage('Unable to Download. Please check input link');
+          setMessage('Downloading...');
         }
       })
       .catch(error => {
