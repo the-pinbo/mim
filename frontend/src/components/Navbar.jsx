@@ -1,6 +1,7 @@
 import React from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import { useState } from 'react'
+import mim_logo from '../assets/MiM 1.svg'
 
 function Navbar() {
     const [nav, setNav]=useState(true);
@@ -11,7 +12,8 @@ function Navbar() {
 
   return (
     <div className='flex  flex-1 justify-between items-center h-24 max-w-[80%] mx-auto px-4 text-white '>
-      <h1 className='w-full text-3xl font-bold text-[#00df9a]'>MIM</h1>
+      {/* MiM logo */}
+      <img src={mim_logo} alt="logo" className='w-20 h-20' />
       <ul className='hidden md:flex'>
         <a href="#home"><li className='p-4'>HOME</li></a>
         <a href="#cli"><li className='p-4'>CLI</li></a>
