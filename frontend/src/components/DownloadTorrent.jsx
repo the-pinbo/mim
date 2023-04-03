@@ -1,10 +1,16 @@
 import React from 'react'
+import { useState } from 'react';
 function DownloadTorrent() {
-  function handleClick() {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "text/plain");
+  
+  const [jsonData, setJsonData] = useState('');
+  const [message, setMessage] = useState('');
 
-    var jsonData = String(document.getElementById('input-field').value);
+  const handleInputChange = (event) => {
+    setJsonData(event.target.value);
+  }
+  const handleButtonClick = () => {
+    const myHeaders = new Headers();
+    myHeaders.append('Content-Type', 'application/json');
 
     fetch('http://localhost:3030/torrents', {
       method: 'POST',
@@ -12,10 +18,18 @@ function DownloadTorrent() {
       mode: 'no-cors',
       body: jsonData,
       redirect: 'follow'
-    }).then(response => response.text())
-      .then(result => console.log(result))
-      .catch(error => console.log('error', error))
-    var myHeaders = new Headers();
+    })
+      .then(response => {
+        if (response.ok) {
+          setMessage('Downloaded');
+        } else {
+          setMessage('Unable to Download. Please check input link');
+        }
+      })
+      .catch(error => {
+        console.log('error', error);
+        setMessage('Unable to Download. Please check input link');
+      });
   }
 
   return (
@@ -26,10 +40,12 @@ function DownloadTorrent() {
         </div>
         <div className='my-4'>
           <div className="flex flex-col sm:flex-row items-center justify-between w-full">
-            <input className=" p-3 flex w-full rounded-md text-black" placeholder="Enter URL" id="input-field" />
-            <button onClick={() => handleClick()} className="bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3">DOWNLOAD</button>
+            <input className=" p-3 flex w-full rounded-md text-black" placeholder="Enter URL" value={jsonData} onChange={handleInputChange} />
+            <button onClick={handleButtonClick} className="bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3">DOWNLOAD</button>
           </div>
-          <p>Enter URL or .torrent files or magnet links to <span className="text-[#00df9a]">Download</span></p>
+          <span className="text-xl text-[#00df9a]">{message && <p>{message}</p>}</span>
+          
+
         </div>
 
       </div>
