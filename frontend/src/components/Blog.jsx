@@ -30,10 +30,7 @@ function Cards() {
             <p className='py-2 border-b mx-8'>Rust-lang Book</p> 
             <p className='py-2 border-b mx-8'>Rustlings</p> 
             </div>
-            <button className='my-6 mx-auto py-4 bg-[#00df9a] w-[200px] rounded-md font-medium text-center text-black'>
-              <a href="https://www.rust-lang.org/learn" target="_blank">
-            Learn</a>
-            </button>
+              <a href="https://www.rust-lang.org/learn" target="_blank" className='my-6 mx-auto py-4 bg-[#00df9a] w-[200px] rounded-md font-medium text-center text-black'>Learn</a>
         </div>
         <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
             <img src={OS} alt="" className="w-20 mx-auto mt-[-3rem] bg-white"/>
