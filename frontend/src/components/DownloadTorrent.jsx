@@ -28,7 +28,7 @@ function DownloadTorrent() {
       })
       .catch(error => {
         console.log('error', error);
-        setMessage('Unable to Download. Please check input link');
+        setMessage('Unable to Download. Server out of service');
       });
   }
 

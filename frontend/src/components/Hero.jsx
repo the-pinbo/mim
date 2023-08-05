@@ -10,7 +10,7 @@ function Hero() {
                 <p className='md:text-5xl sm:text-4xl text-xl font-bold'>Peer-to-Peer Communication</p>
                 
             </div>
-            <p className='md:text-2xl text-xl text-bold text-gray-500 pt-5'>A command line GUI torrent application that can download files from the internet through .torrent files and magnet links.
+            <p className='md:text-2xl text-xl text-bold text-gray-500 pt-5'>A command line GUI torrent application that can download files from the internet through .torrent files.
             </p>
             <a href='#downloadTorrent'><button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-4 text-black'>Get Started</button></a>
         </div>
