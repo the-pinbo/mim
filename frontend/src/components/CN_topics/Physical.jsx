@@ -1,8 +1,24 @@
+import { motion } from "framer-motion";
+import { CN_text } from "../../constants/cn";
+import binaryCode from "../../assets/binary-code.png"
+import styles from "../../constants/style";
 function Physical() {
     return (
-        <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eaque fugit expedita sed, ducimus praesentium rerum doloremque quae unde eos similique repellat enim quod blanditiis dolorum neque deleniti consectetur nesciunt laudantium earum autem. Laboriosam, inventore delectus libero est possimus dolor totam quis sapiente, atque architecto eaque? Asperiores cum itaque repellendus rerum aperiam vel dolor ex provident exercitationem sed minus velit voluptas saepe perspiciatis odit architecto neque alias ab quisquam nihil, dolore delectus quidem! Qui blanditiis fugiat eum quasi explicabo atque tenetur est impedit obcaecati. Perspiciatis voluptatum obcaecati, tempora voluptatibus mollitia maxime, libero repellat quae facere ducimus alias iste consequatur amet!
-        </div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+        >
+            <div className={`text-center basis-full mb-5 ${styles.title}`}>Physical Layer</div>
+            <div className="flex">
+                <div className="basis-4/12 flex justify-center">
+                    <img src={binaryCode} className="h-48" />
+                </div>
+                <div className="basis-8/12">
+                    {CN_text.physical_layer.description}
+                </div>
+            </div>
+        </motion.div>
     )
 }
 export default Physical

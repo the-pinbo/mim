@@ -1,6 +1,7 @@
 import React from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import { useState } from 'react'
+import mim_logo from '../assets/MiM 1.svg'
 
 function Navbar() {
     const [nav, setNav]=useState(true);
@@ -10,13 +11,14 @@ function Navbar() {
     }
 
   return (
-    <div className='flex  flex-1 justify-between items-center h-24 max-w-[80%] mx-auto px-4 text-white '>
-      <h1 className='w-full text-3xl font-bold text-[#00df9a]'>MIM</h1>
+    <div className='flex  flex-1 justify-between items-center h-24 max-w-[90%] mx-auto px-4 text-white '>
+      {/* MiM logo */}
+      <img src={mim_logo} alt="logo" className='w-20 h-20' />
       <ul className='hidden md:flex'>
-        <li className='p-4'>HOME</li>
-        <li className='p-4'>CLI</li>
-        <li className='p-4'>DOWNLOAD_TORRENT</li>
-        <li className='p-4'>BLOGS</li>
+        <a href="#home"><li className='p-4'>HOME</li></a>
+        <a href="#cli"><li className='p-4'>CLI</li></a>
+        <a href="#downloadTorrent"><li className='p-4'>DOWNLOAD_TORRENT</li></a>
+        <a href="#blogs"><li className='p-4'>BLOGS</li></a>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
         {
@@ -30,6 +32,10 @@ function Navbar() {
         <li className='p-4 border-b border-gray-600'>CLI</li>
         <li className='p-4 border-b border-gray-600'>DOWNLOAD TORRENT</li>
         <li className='p-4'>BLOGS</li>
+        <a href="#home"><li className='p-4 border-b border-gray-600'>HOME</li></a>
+        <a href="#cli"><li className='p-4 border-b border-gray-600'>CLI</li></a>
+        <a href="#downloadTorrent"><li className='p-4 border-b border-gray-600'>DOWNLOAD_TORRENT</li></a>
+        <a href="#blogs"><li className='p-4 border-b border-gray-600'>BLOGS</li></a>
         </ul>
       </div>
     </div>
